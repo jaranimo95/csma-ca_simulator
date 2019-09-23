@@ -113,7 +113,6 @@ public class CSMA_CA_Station implements Runnable {
 			  try 						   { station.sleep(t_difs); }
 			catch (InterruptedException e) { System.out.println(stationName + ": interrupted"); }
 			t_tot += t_difs;
-		
 			m--;	// Packet sent over medium successfully, decrement total number of packets left to send
 		}
 		System.out.println(stationName + " Total Time: " + t_tot);
